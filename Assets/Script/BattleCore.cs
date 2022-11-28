@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Unity.MLAgents;
 
 namespace Footsies
 {
@@ -51,7 +52,8 @@ namespace Footsies
         public uint fighter2RoundWon { get; private set; }
 
         public List<Fighter> fighters { get { return _fighters; } }
-        private List<Fighter> _fighters = new List<Fighter>();
+        [SerializeField]
+        public List<Fighter> _fighters = new List<Fighter>();
 
         private float roundStartTime;
         private int frameCount;
@@ -63,7 +65,9 @@ namespace Footsies
 
         private Animator roundUIAnimator;
 
+        [SerializeField]
         private BattleAI battleAI = null;
+        private RLBattleAgent battleAgent;
 
         private static uint maxRecordingInputFrame = 60 * 60 * 5;
         private InputData[] recordingP1Input = new InputData[maxRecordingInputFrame];
@@ -98,6 +102,8 @@ namespace Footsies
             {
                 roundUIAnimator = roundUI.GetComponent<Animator>();
             }
+
+            battleAgent = GetComponentInChildren<RLBattleAgent>();
         }
         
         void FixedUpdate()
@@ -161,7 +167,7 @@ namespace Footsies
                     if (timer <= 0f
                         || (timer <= endStateSkippableTime && IsKOSkipButtonPressed()))
                     {
-                        ChangeRoundState(RoundStateType.Stop);
+                        ChangeRoundState(RoundStateType.Intro);
                     }
 
                     break;
@@ -304,9 +310,17 @@ namespace Footsies
             var time = Time.fixedTime - roundStartTime;
 
             InputData p1Input = new InputData();
-            p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Left) ? (int)InputDefine.Left : 0;
-            p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Right) ? (int)InputDefine.Right : 0;
-            p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Attack) ? (int)InputDefine.Attack : 0;
+            if (battleAgent != null && _roundState == RoundStateType.Fight)
+            {
+                Debug.Log("get AI input");
+                p1Input.input |= battleAgent.getAgentInput();
+            }
+            else
+            {
+                p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Left) ? (int)InputDefine.Left : 0;
+                p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Right) ? (int)InputDefine.Right : 0;
+                p1Input.input |= InputManager.Instance.GetButton(InputManager.Command.p1Attack) ? (int)InputDefine.Attack : 0;
+            }
             p1Input.time = time;
 
             if (debugP1Attack)
@@ -542,6 +556,16 @@ namespace Footsies
                 return p2FrameLeft - p1FrameLeft;
             else
                 return p1FrameLeft - p2FrameLeft;
+        }
+
+        public void resetRoundState()
+        {
+            ChangeRoundState(RoundStateType.Intro);
+        }
+
+        public float getRoundStartTime()
+        {
+            return roundStartTime;
         }
     }
 

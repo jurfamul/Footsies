@@ -190,7 +190,7 @@ namespace Footsies
                 moveQueue.Enqueue(0);
             }
 
-            Debug.Log("AddNeutral");
+            //Debug.Log("AddNeutral");
         }
 
         private void AddFarApproach1()
@@ -200,7 +200,7 @@ namespace Footsies
             AddForwardInputQueue(30);
             AddBackwardInputQueue(10);
 
-            Debug.Log("AddFarApproach1");
+            //Debug.Log("AddFarApproach1");
         }
 
         private void AddFarApproach2()
@@ -210,7 +210,7 @@ namespace Footsies
             AddForwardDashInputQueue();
             AddBackwardInputQueue(25);
 
-            Debug.Log("AddFarApproach2");
+            //Debug.Log("AddFarApproach2");
         }
         
         private void AddMidApproach1()
@@ -220,7 +220,7 @@ namespace Footsies
             AddForwardInputQueue(20);
             AddBackwardInputQueue(10);
 
-            Debug.Log("AddMidApproach1");
+            //Debug.Log("AddMidApproach1");
         }
 
         private void AddMidApproach2()
@@ -228,14 +228,14 @@ namespace Footsies
             AddForwardDashInputQueue();
             AddBackwardInputQueue(30);
 
-            Debug.Log("AddMidApproach2");
+            //Debug.Log("AddMidApproach2");
         }
 
         private void AddFallBack1()
         {
             AddBackwardInputQueue(60);
 
-            Debug.Log("AddFallBack1");
+            //Debug.Log("AddFallBack1");
         }
 
         private void AddFallBack2()
@@ -243,7 +243,7 @@ namespace Footsies
             AddBackwardDashInputQueue();
             AddBackwardInputQueue(60);
 
-            Debug.Log("AddFallBack2");
+            //Debug.Log("AddFallBack2");
         }
 
         private void AddNoAttack()
@@ -253,7 +253,7 @@ namespace Footsies
                 attackQueue.Enqueue(0);
             }
 
-            Debug.Log("AddNoAttack");
+            //Debug.Log("AddNoAttack");
         }
 
         private void AddOneHitImmediateAttack()
@@ -264,7 +264,7 @@ namespace Footsies
                 attackQueue.Enqueue(0);
             }
 
-            Debug.Log("AddOneHitImmediateAttack");
+            //Debug.Log("AddOneHitImmediateAttack");
         }
 
         private void AddTwoHitImmediateAttack()
@@ -280,7 +280,7 @@ namespace Footsies
                 attackQueue.Enqueue(0);
             }
 
-            Debug.Log("AddTwoHitImmediateAttack");
+            //Debug.Log("AddTwoHitImmediateAttack");
         }
 
         private void AddImmediateSpecialAttack()
@@ -291,7 +291,7 @@ namespace Footsies
             }
             attackQueue.Enqueue(0);
 
-            Debug.Log("AddImmediateSpecialAttack");
+            //Debug.Log("AddImmediateSpecialAttack");
         }
 
         private void AddDelaySpecialAttack()
@@ -302,7 +302,7 @@ namespace Footsies
             }
             attackQueue.Enqueue(0);
 
-            Debug.Log("AddDelaySpecialAttack");
+            //Debug.Log("AddDelaySpecialAttack");
         }
 
         private void AddForwardInputQueue(int frame)
@@ -330,9 +330,9 @@ namespace Footsies
 
         private void AddBackwardDashInputQueue()
         {
-            moveQueue.Enqueue(GetForwardInput());
+            moveQueue.Enqueue(GetBackwardInput());
             moveQueue.Enqueue(0);
-            moveQueue.Enqueue(GetForwardInput());
+            moveQueue.Enqueue(GetBackwardInput());
         }
 
         private void UpdateFightState()

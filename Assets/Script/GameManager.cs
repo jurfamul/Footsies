@@ -18,6 +18,10 @@ namespace Footsies
         public SceneIndex currentScene { get; private set; }
         public bool isVsCPU { get; private set; }
 
+        public bool rematch { get; set; }
+        
+        public bool isRLTraining { get; set;}
+
         private void Awake()
         {
             DontDestroyOnLoad(this.gameObject);
