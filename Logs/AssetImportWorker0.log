@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Core' Language: 'en' Physical Memory: 16173 MB
+OS: 'Windows 11  (10.0.22631) 64bit Professional' Language: 'en' Physical Memory: 65375 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/jurge/Documents/Grad School/Fall 2022 Classes/Intro To AI/Practicum/Footsies
+C:/Users/jurge/OneDrive/Documents/UnityWorkspace/Footsies
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54656
-Successfully changed project path to: C:/Users/jurge/Documents/Grad School/Fall 2022 Classes/Intro To AI/Practicum/Footsies
-C:/Users/jurge/Documents/Grad School/Fall 2022 Classes/Intro To AI/Practicum/Footsies
+57654
+Successfully changed project path to: C:/Users/jurge/OneDrive/Documents/UnityWorkspace/Footsies
+C:/Users/jurge/OneDrive/Documents/UnityWorkspace/Footsies
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,81 +47,84 @@ C:/Users/jurge/Documents/Grad School/Fall 2022 Classes/Intro To AI/Practicum/Foo
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 166.64 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 82.40 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.6f1 (7da38d85baf6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/jurge/Documents/Grad School/Fall 2022 Classes/Intro To AI/Practicum/Footsies/Assets
+[Subsystems] Discovering subsystems at path C:/Users/jurge/OneDrive/Documents/UnityWorkspace/Footsies/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2080 with Max-Q Design (ID=0x1e90)
+    Renderer: NVIDIA GeForce RTX 4080 SUPER (ID=0x2702)
     Vendor:   NVIDIA
-    VRAM:     8002 MB
-    Driver:   31.0.15.2698
+    VRAM:     16047 MB
+    Driver:   32.0.15.5612
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56088
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010501 seconds.
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.004130 seconds.
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 205.11 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 75.76 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.984 seconds
+- Completed reload, in  0.417 seconds
 Domain Reload Profiling:
-	ReloadAssembly (984ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (417ms)
+		BeginReloadAssembly (44ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (743ms)
-			LoadAssemblies (97ms)
+		EndReloadAssembly (306ms)
+			LoadAssemblies (43ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (63ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (68ms)
-			SetupLoadedEditorAssemblies (460ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (193ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (34ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (205ms)
+				RefreshPlugins (76ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (165ms)
-				ProcessInitializeOnLoadMethodAttributes (54ms)
+				ProcessInitializeOnLoadAttributes (84ms)
+				ProcessInitializeOnLoadMethodAttributes (26ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.016569 seconds.
+Registered in 0.006466 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 157.37 ms, found 7 plugins.
+Refreshing native plugins compatible for Editor in 77.03 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\jurge\Documents\Grad School\Fall 2022 Classes\Intro To AI\Practicum\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
@@ -130,43 +133,43 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Package Manager log level set to [2]
 Mono: successfully reloaded assembly
-- Completed reload, in  3.295 seconds
+- Completed reload, in  1.357 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3296ms)
-		BeginReloadAssembly (119ms)
+	ReloadAssembly (1357ms)
+		BeginReloadAssembly (66ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (20ms)
-		EndReloadAssembly (3063ms)
-			LoadAssemblies (113ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (1231ms)
+			LoadAssemblies (63ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (386ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (93ms)
-			SetupLoadedEditorAssemblies (2390ms)
+			SetupTypeCache (172ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (50ms)
+			SetupLoadedEditorAssemblies (907ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (157ms)
-				BeforeProcessingInitializeOnLoad (174ms)
-				ProcessInitializeOnLoadAttributes (1939ms)
-				ProcessInitializeOnLoadMethodAttributes (91ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				RefreshPlugins (77ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (693ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.58 ms, found 7 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.79 ms, found 7 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6393 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 319 unused Assets / (26.4 MB). Loaded Objects now: 6742.
-Memory consumption went from 294.5 MB to 268.1 MB.
-Total: 22.837900 ms (FindLiveObjects: 0.541100 ms CreateObjectMapping: 0.559000 ms MarkObjects: 16.779600 ms  DeleteObjects: 4.956700 ms)
+Unloading 6346 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 317 unused Assets / (26.0 MB). Loaded Objects now: 6692.
+Memory consumption went from 290.6 MB to 264.6 MB.
+Total: 17.395900 ms (FindLiveObjects: 0.450500 ms CreateObjectMapping: 0.285900 ms MarkObjects: 12.205900 ms  DeleteObjects: 4.452000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -179,3 +182,148 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 197212.366379 seconds.
+  path: Assets/Art/TestFighter.png
+  artifactKey: Guid(8df0e0aa7a13a064aa8eef682e155eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/TestFighter.png using Guid(8df0e0aa7a13a064aa8eef682e155eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26bbc71b8fadaf25caf98558b3cda49b') in 0.154919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Art/MenuButton.png
+  artifactKey: Guid(6cbb44f8613d28f4db106c8de4d473f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/MenuButton.png using Guid(6cbb44f8613d28f4db106c8de4d473f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '163666185a65bd78baff7584b724ebaa') in 0.029621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Art/HitEffect.png
+  artifactKey: Guid(fd948abaa10958b43b05b8b445524b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/HitEffect.png using Guid(fd948abaa10958b43b05b8b445524b48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c494f6c60ef781151eb6a0e75ee53257') in 0.041215 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Art/BG.png
+  artifactKey: Guid(8858e131eba679647a02786329937e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/BG.png using Guid(8858e131eba679647a02786329937e7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0bb426b1dbd0790932a68f3fe091664') in 0.022244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Art/UI.png
+  artifactKey: Guid(e2f751781ac3ccd48bd6c994f09486fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/UI.png using Guid(e2f751781ac3ccd48bd6c994f09486fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3726482bdb8fb5a77a2f94421d2b5a8c') in 0.033700 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007854 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Error saving file Library/StateCache/LayerSettings/9e/9ecc5c3c162a7aba29bafa64c8b94b7c.json. Error: System.IO.IOException: Sharing violation on path C:\Users\jurge\OneDrive\Documents\UnityWorkspace\Footsies\Library\StateCache\LayerSettings\9e\9ecc5c3c162a7aba29bafa64c8b94b7c.json
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.Boolean anonymous, System.IO.FileOptions options) [0x0019e] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.IO.FileStream..ctor (System.String path, System.IO.FileMode mode, System.IO.FileAccess access, System.IO.FileShare share, System.Int32 bufferSize, System.IO.FileOptions options) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.FileStream..ctor(string,System.IO.FileMode,System.IO.FileAccess,System.IO.FileShare,int,System.IO.FileOptions)
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding, System.Int32 bufferSize) [0x00055] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at System.IO.StreamWriter..ctor (System.String path, System.Boolean append, System.Text.Encoding encoding) [0x00000] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at (wrapper remoting-invoke-with-check) System.IO.StreamWriter..ctor(string,bool,System.Text.Encoding)
+  at System.IO.File.WriteAllText (System.String path, System.String contents, System.Text.Encoding encoding) [0x00034] in <e40e5a8f982c4b618a930d29f9bd091c>:0 
+  at UnityEditor.StateCache`1[T].SetState (UnityEngine.Hash128 key, T obj) [0x0004b] in <44a70d1b13cf47e29810e30f45ffae08>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.StateCache`1<UnityEditor.Tools/LayerSettings>:SetState (UnityEngine.Hash128,UnityEditor.Tools/LayerSettings)
+UnityEditor.Tools:set_lockedLayers (int)
+UnityEditor.Tools:OnEnable ()
+UnityEngine.ScriptableObject:CreateInstance (System.Type)
+UnityEngine.ScriptableObject:CreateInstance<UnityEditor.Tools> ()
+UnityEditor.Tools:get_get ()
+UnityEditor.Tools:get_visibleLayers ()
+UnityEditor.Animations.Rigging.BoneRendererUtils:.cctor () (at Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs:121)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+(Filename: Library/PackageCache/com.unity.animation.rigging@1.1.1/Editor/Utils/BoneRendererUtils.cs Line: 121)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.031 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1032ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (874ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (160ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (473ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (352ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.85 ms, found 7 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6183 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 130 unused Assets / (25.5 MB). Loaded Objects now: 6727.
+Memory consumption went from 279.2 MB to 253.7 MB.
+Total: 10.317300 ms (FindLiveObjects: 0.252800 ms CreateObjectMapping: 0.095000 ms MarkObjects: 7.214200 ms  DeleteObjects: 2.754500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
