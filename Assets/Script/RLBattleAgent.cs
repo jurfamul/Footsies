@@ -134,23 +134,28 @@ namespace Footsies
                 }
             }
 
+            AddReward(-0.00001f);
 
             if (fighter.isDead)
             {
-                Debug.Log("round Lost");
-                SetReward(-7f);
+                //Debug.Log("round Lost");
+                AddReward(-7f);
                 moveQueue.Clear();
                 attackQueue.Clear();
+
+                //Note: Comment out the next line when building footies.exe to ensure that the rounds end as normal
                 battleCore.resetRoundState();
                 EndEpisode();
             }
 
             if (battleCore.fighter2.isDead)
             {
-                Debug.Log("round won!");
-                SetReward(10f);
+                //Debug.Log("round won!");
+                AddReward(10f);
                 moveQueue.Clear();
                 attackQueue.Clear();
+
+                //Note: Comment out the next line when building footies.exe to ensure that the rounds end as normal
                 battleCore.resetRoundState();
                 EndEpisode();
             }

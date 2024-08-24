@@ -1,0 +1,110 @@
+{
+    "ILFighter": {
+        "checkpoints": [
+            {
+                "steps": 999938,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-999938.onnx",
+                "reward": -7.0,
+                "creation_time": 1724316892.0814893,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-999938.pt"
+                ]
+            },
+            {
+                "steps": 1499982,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-1499982.onnx",
+                "reward": 3.0,
+                "creation_time": 1724318740.8977935,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-1499982.pt"
+                ]
+            },
+            {
+                "steps": 1999948,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-1999948.onnx",
+                "reward": -1.3333333333333333,
+                "creation_time": 1724320612.1664526,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-1999948.pt"
+                ]
+            },
+            {
+                "steps": 2499994,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-2499994.onnx",
+                "reward": 2.4444444444444446,
+                "creation_time": 1724322475.1045504,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-2499994.pt"
+                ]
+            },
+            {
+                "steps": 2999936,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-2999936.onnx",
+                "reward": -1.3333333333333333,
+                "creation_time": 1724324161.5788195,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-2999936.pt"
+                ]
+            },
+            {
+                "steps": 3499978,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-3499978.onnx",
+                "reward": -3.6,
+                "creation_time": 1724325896.6604617,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-3499978.pt"
+                ]
+            },
+            {
+                "steps": 3999943,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-3999943.onnx",
+                "reward": 1.5,
+                "creation_time": 1724327562.2646902,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-3999943.pt"
+                ]
+            },
+            {
+                "steps": 4499994,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-4499994.onnx",
+                "reward": -7.0,
+                "creation_time": 1724329252.0368,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-4499994.pt"
+                ]
+            },
+            {
+                "steps": 4999969,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-4999969.onnx",
+                "reward": -1.3333333333333333,
+                "creation_time": 1724330936.343329,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-4999969.pt"
+                ]
+            },
+            {
+                "steps": 5000033,
+                "file_path": "results\\RLFighter_trial4\\ILFighter\\ILFighter-5000033.onnx",
+                "reward": -1.3333333333333333,
+                "creation_time": 1724330936.3814714,
+                "auxillary_file_paths": [
+                    "results\\RLFighter_trial4\\ILFighter\\ILFighter-5000033.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000033,
+            "file_path": "results\\RLFighter_trial4\\ILFighter.onnx",
+            "reward": -1.3333333333333333,
+            "creation_time": 1724330936.3814714,
+            "auxillary_file_paths": [
+                "results\\RLFighter_trial4\\ILFighter\\ILFighter-5000033.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.10.0+cu113"
+    }
+}

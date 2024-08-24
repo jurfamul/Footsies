@@ -1,0 +1,47 @@
+{
+    "ILFighter": {
+        "checkpoints": [
+            {
+                "steps": 499967,
+                "file_path": "results\\ppo\\ILFighter\\ILFighter-499967.onnx",
+                "reward": 0.4375,
+                "creation_time": 1724307308.6859155,
+                "auxillary_file_paths": [
+                    "results\\ppo\\ILFighter\\ILFighter-499967.pt"
+                ]
+            },
+            {
+                "steps": 500031,
+                "file_path": "results\\ppo\\ILFighter\\ILFighter-500031.onnx",
+                "reward": 0.4375,
+                "creation_time": 1724307308.7241623,
+                "auxillary_file_paths": [
+                    "results\\ppo\\ILFighter\\ILFighter-500031.pt"
+                ]
+            },
+            {
+                "steps": 500031,
+                "file_path": "results\\ppo\\ILFighter\\ILFighter-500031.onnx",
+                "reward": null,
+                "creation_time": 1724312298.2473402,
+                "auxillary_file_paths": [
+                    "results\\ppo\\ILFighter\\ILFighter-500031.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500031,
+            "file_path": "results\\ppo\\ILFighter.onnx",
+            "reward": null,
+            "creation_time": 1724312298.2473402,
+            "auxillary_file_paths": [
+                "results\\ppo\\ILFighter\\ILFighter-500031.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.29.0",
+        "torch_version": "1.10.0+cu113"
+    }
+}

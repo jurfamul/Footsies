@@ -775,11 +775,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 2
-  cloudProjectId: 
+  cloudProjectId: 7c047dba-d56a-4377-a36a-e575bec6624c
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Platformer-2D
-  organizationId: 
+  projectName: Footsies 2024-08-13_13-07-34
+  organizationId: jurgenf
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1
   playerDataPath: 

@@ -41,6 +41,8 @@ namespace Footsies
         public bool debugP2Guard = false;
 
         public bool debugPlayLastRoundInput = false;
+        public bool isP1RL;
+        public bool isP2RL;
 
         private float timer = 0;
         private uint maxRoundWon = 3;
@@ -68,6 +70,7 @@ namespace Footsies
         [SerializeField]
         private BattleAI battleAI = null;
         private RLBattleAgent battleAgent;
+        private ALBattleAgent adversarialAgent;
 
         private static uint maxRecordingInputFrame = 60 * 60 * 5;
         private InputData[] recordingP1Input = new InputData[maxRecordingInputFrame];
@@ -103,7 +106,15 @@ namespace Footsies
                 roundUIAnimator = roundUI.GetComponent<Animator>();
             }
 
-            battleAgent = GetComponentInChildren<RLBattleAgent>();
+            if (isP1RL)
+            {
+                battleAgent = GetComponentInChildren<RLBattleAgent>();
+            }
+
+            if (isP2RL)
+            {
+                adversarialAgent = GetComponentInChildren<ALBattleAgent>();
+            }
         }
         
         void FixedUpdate()
@@ -167,6 +178,7 @@ namespace Footsies
                     if (timer <= 0f
                         || (timer <= endStateSkippableTime && IsKOSkipButtonPressed()))
                     {
+                        //Set the value of change round state to RoundStateType.Intro for RL training or RoundStateType.Stop for final builds
                         ChangeRoundState(RoundStateType.Intro);
                     }
 
@@ -197,8 +209,10 @@ namespace Footsies
 
                     roundUIAnimator.SetTrigger("RoundStart");
 
-                    if (GameManager.Instance.isVsCPU)
+                    if (GameManager.Instance.isVsCPU && !isP2RL)
+                    {
                         battleAI = new BattleAI(this);
+                    }
 
                     break;
                 case RoundStateType.Fight:
@@ -312,7 +326,7 @@ namespace Footsies
             InputData p1Input = new InputData();
             if (battleAgent != null && _roundState == RoundStateType.Fight)
             {
-                Debug.Log("get AI input");
+                //Debug.Log("get AI input");
                 p1Input.input |= battleAgent.getAgentInput();
             }
             else
@@ -342,7 +356,12 @@ namespace Footsies
 
             InputData p2Input = new InputData();
 
-            if (battleAI != null)
+            if (adversarialAgent != null)
+            {
+                //Debug.Log("get AI 2 input");
+                p2Input.input |= adversarialAgent.getAgentInput();
+            }
+            else if (battleAI != null)
             {
                 p2Input.input |= battleAI.getNextAIInput();
             }

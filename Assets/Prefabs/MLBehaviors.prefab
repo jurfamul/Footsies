@@ -49,7 +49,6 @@ MonoBehaviour:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
   MaxStep: 0
-  oppenentPos: {fileID: 0}
 --- !u!114 &5697225172698284883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,8 +71,8 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
-  m_InferenceDevice: 0
+  m_Model: {fileID: 5022602860645237092, guid: ddb8911cc67b2204aa413473d67efef2, type: 3}
+  m_InferenceDevice: 1
   m_BehaviorType: 0
   m_BehaviorName: ILFighter
   TeamId: 0

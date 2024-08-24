@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1724312290",
+        "python_version": "3.8.10 (tags/v3.8.10:3d8993a, May  3 2021, 11:48:03) [MSC v.1928 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\jurge\\OneDrive\\Documents\\UnityWorkspace\\Footsies\\venv\\Scripts\\mlagents-learn --resume",
+        "mlagents_version": "0.29.0",
+        "mlagents_envs_version": "0.29.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.10.0+cu113",
+        "numpy_version": "1.21.2",
+        "end_time_seconds": "1724312298"
+    },
+    "total": 7.28177,
+    "count": 1,
+    "self": 0.003491799999999934,
+    "children": {
+        "run_training.setup": {
+            "total": 0.019557600000000064,
+            "count": 1,
+            "self": 0.019557600000000064
+        },
+        "TrainerController.start_learning": {
+            "total": 7.2587206,
+            "count": 1,
+            "self": 5.219999999983571e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 6.7353721,
+                    "count": 1,
+                    "self": 6.7353721
+                },
+                "trainer_threads": {
+                    "total": 4.0000000023354687e-07,
+                    "count": 1,
+                    "self": 4.0000000023354687e-07
+                },
+                "TrainerController._save_models": {
+                    "total": 0.5232958999999999,
+                    "count": 1,
+                    "self": 0.006930399999999892,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.5163655,
+                            "count": 1,
+                            "self": 0.5163655
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
